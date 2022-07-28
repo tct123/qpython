@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
-<layout>
+<layout xmlns:tools="http://schemas.android.com/tools">
 
     <android.support.design.widget.AppBarLayout
         xmlns:android="http://schemas.android.com/apk/res/android"
@@ -15,7 +15,8 @@
             android:background="#FF4A4A4A"
             android:elevation="2dp"
             app:popupTheme="@style/DefaultBlueToolbar"
-            app:theme="@style/ToolbarTheme"/>
+            app:theme="@style/ToolbarTheme"
+            tools:targetApi="lollipop" />
     </android.support.design.widget.AppBarLayout>
 
 </layout>

@@ -17,6 +17,7 @@
 
 <RelativeLayout
     xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="wrap_content"
     android:fitsSystemWindows="true"
@@ -36,7 +37,8 @@
             android:background="#FF4A4A4A"
             android:elevation="2dp"
             app:popupTheme="@style/DefaultBlueToolbar"
-            app:theme="@style/ToolbarTheme">
+            app:theme="@style/ToolbarTheme"
+            tools:targetApi="lollipop">
 
             <Spinner
                 android:id="@+id/spinner_toolbar"

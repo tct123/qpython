@@ -1,4 +1,4 @@
-<resources tools:ignore="ExtraTranslation" xmlns:tools="http://schemas.android.com/tools">
+<resources tools:ignore="ExtraTranslation,MissingQuantity,UnusedQuantity" xmlns:tools="http://schemas.android.com/tools">
     <string name="terminal">Терминал</string>
     <string name="library">Библиотека</string>
     <string name="recent">Недавние</string>
@@ -186,10 +186,7 @@
     <string name="send">Отправить</string>
     <string name="no_camera">Не удаётся подключиться к камере. Проверьте соответствующее разрешение для приложения.</string>
     <string name="no_storage">Нет разрешения для доступа к хранилищу</string>
-    <plurals name="x_text_replaced">
-        <item quantity="zero">0 найдено</item>
-        <item quantity="other">%d текст заменён</item>
-    </plurals>
+
     <string-array name="insert_datetime_lang">
         <item>English</item>
         <item>Chinese</item>
@@ -224,7 +221,6 @@
     </string-array>
 
 
-    <array name="library">Net библиотека</array>
 
 
     <string-array name="tab_string">

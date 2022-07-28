@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
-<layout>
+<layout xmlns:tools="http://schemas.android.com/tools">
 
     <LinearLayout
         xmlns:android="http://schemas.android.com/apk/res/android"
@@ -21,7 +21,8 @@
             android:elevation="2dp"
             android:indeterminate="false"
             android:maxHeight="3dp"
-            android:minHeight="3dp"/>
+            android:minHeight="3dp"
+            tools:targetApi="lollipop" />
 
 
         <WebView

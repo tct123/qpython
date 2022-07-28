@@ -51,7 +51,7 @@ public class WindowList extends ListActivity {
      * <p>
      * Used by layout xml.
      */
-    public static class CloseButton extends ImageView {
+    public static class CloseButton extends android.support.v7.widget.AppCompatImageView {
         public CloseButton(Context context) {
             super(context);
         }

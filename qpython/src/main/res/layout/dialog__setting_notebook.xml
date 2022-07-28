@@ -25,7 +25,7 @@
         android:text="Install QPyNotebook Plugin"
         android:textColor="@color/white"
         android:textSize="16sp"
-        />
+        tools:targetApi="lollipop" />
 
     <CheckBox
         android:id="@+id/notebook_lib"
@@ -37,5 +37,5 @@
         android:textColor="@color/white"
         android:textSize="16sp"
         android:layout_marginTop="5dp"
-        />
+        tools:targetApi="lollipop" />
 </LinearLayout>
