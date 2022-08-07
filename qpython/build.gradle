@@ -9,7 +9,6 @@ def releaseTime() {
 
 android {
     compileSdkVersion rootProject.ext.compileSdkVersion
-    buildToolsVersion rootProject.ext.buildToolsVersion
     flavorDimensions "default"
     defaultConfig {
         minSdkVersion rootProject.ext.minSdkVersion
@@ -82,16 +81,13 @@ android {
     dataBinding {
         enabled = true
     }
-    lintOptions {
-        disable 'MissingTranslation'
-        abortOnError false
+    packagingOptions {
+        resources {
+            excludes += ['META-INF/LICENSE.txt', 'META-INF/NOTICE.txt']
+        }
     }
 
     //为了解决部分第三方库重复打包了META-INF的问题
-    packagingOptions {
-        exclude 'META-INF/LICENSE.txt'
-        exclude 'META-INF/NOTICE.txt'
-    }
 
     //设置渠道
     productFlavors {
@@ -123,6 +119,10 @@ android {
         flatDir {
             dirs 'libs'
         }
+    }
+    lint {
+        abortOnError false
+        disable 'MissingTranslation'
     }
 
 
